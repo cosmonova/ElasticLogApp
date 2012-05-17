@@ -34,6 +34,12 @@
 		
 		<script src="assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		
+		<style type="text/css">
+		body {
+
+}
+		</style>
+		
 	</head>
 	<body>
 	
@@ -71,36 +77,11 @@
 
       </div>
       
-        <h1>Javascript for Bootstrap</h1>
-        <p class="lead">Bring Bootstrap's components to life—now with 12 custom <a href="http://jquery.com/" target="_blank">jQuery</a> plugins.
-        </p><div class="subnav subnav-fixed">
-          <ul class="nav nav-pills">
-            <li class=""><a href="#javascript">All plugins</a></li>
-            <li class=""><a href="#modals">Modal</a></li>
-            <li class=""><a href="#dropdowns">Dropdown</a></li>
-            <li class=""><a href="#scrollspy">Scrollspy</a></li>
-            <li class="active"><a href="#tabs">Tab</a></li>
-            <li><a href="#tooltips">Tooltip</a></li>
-            <li><a href="#popovers">Popover</a></li>
-            <li><a href="#alerts">Alert</a></li>
-            <li><a href="#buttons">Button</a></li>
-            <li><a href="#collapse">Collapse</a></li>
-            <li><a href="#carousel">Carousel</a></li>
-            <li><a href="#typeahead">Typeahead</a></li>
-          </ul>
-        </div>
+      
       </header>
 
 
-      <!-- Using Javascript w/ Bootstrap
-      ================================================== -->
-      <section id="javascript">
-        
-          
-        
-       <!-- /row -->
-      <div class="alert alert-info"><strong>Heads up!</strong> All javascript plugins require the latest version of jQuery.</div>
-    </section>
+    
 
 
 
@@ -127,51 +108,9 @@
     <section id="dropdowns">
 
    
-        <div class="span9 columns">
-          <h2>Examples</h2>
-          <p>Click on the dropdown nav links in the navbar and pills below to test dropdowns.</p>
-          <div id="navbar-example" class="navbar navbar-static">
-            <div class="navbar-inner">
-              <div class="container" style="width: auto;">
-                <a class="brand" href="#">Project Name</a>
-                <ul class="nav">
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <ul class="nav pull-right">
-                  <li id="fat-menu" class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown 3 <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> <!-- /navbar-example -->
+        <div class=row-fluid>
 
+          
           <ul class="nav nav-pills">
             <li class="active"><a href="#">Regular link</a></li>
             <li class="dropdown">
@@ -223,9 +162,8 @@
    
       <div class="row">
       
-       <div class="span9 columns">
-          <h2>Example alerts</h2>
-          <p>The alerts plugin works on regular alert messages, and block messages.</p>
+       <div class="">
+
           <div class="alert fade in">
             <button class="close" data-dismiss="alert">×</button>
             <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
@@ -239,39 +177,9 @@
             </p>
           </div>
           <hr>
-          <h2>Using bootstrap-alert.js</h2>
-          <p>Enable dismissal of an alert via javascript:</p>
-          <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="str">".alert"</span><span class="pun">).</span><span class="pln">alert</span><span class="pun">()</span></li></ol></pre>
-          <h3>Markup</h3>
-          <p>Just add <code>data-dismiss="alert"</code> to your close button to automatically give an alert close functionality.</p>
-          <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"close"</span><span class="pln"> </span><span class="atn">data-dismiss</span><span class="pun">=</span><span class="atv">"alert"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">&amp;times;</span><span class="tag">&lt;/a&gt;</span></li></ol></pre>
-          <h3>Methods</h3>
-          <h4>$().alert()</h4>
-          <p>Wraps all alerts with close functionality. To have your alerts animate out when closed, make sure they have the <code>.fade</code> and <code>.in</code> class already applied to them.</p>
-          <h4>.alert('close')</h4>
-          <p>Closes an alert.</p>
-          <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="str">".alert"</span><span class="pun">).</span><span class="pln">alert</span><span class="pun">(</span><span class="str">'close'</span><span class="pun">)</span></li></ol></pre>
-          <h3>Events</h3>
-          <p>Bootstrap's alert class exposes a few events for hooking into alert functionality.</p>
-          <table class="table table-bordered table-striped">
-            <thead>
-             <tr>
-               <th style="width: 150px;">Event</th>
-               <th>Description</th>
-             </tr>
-            </thead>
-            <tbody>
-             <tr>
-               <td>close</td>
-               <td>This event fires immediately when the <code>close</code> instance method is called.</td>
-             </tr>
-             <tr>
-               <td>closed</td>
-               <td>This event is fired when the alert has been closed (will wait for css transitions to complete).</td>
-             </tr>
-            </tbody>
-          </table>
-<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="str">'#my-alert'</span><span class="pun">).</span><span class="pln">bind</span><span class="pun">(</span><span class="str">'closed'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">  </span><span class="com">// do something…</span></li><li class="L2"><span class="pun">})</span></li></ol></pre>
+  
+          
+
         </div>
       </div>
     </section>
@@ -289,8 +197,7 @@
       <div class="row">
        
         <div class="span9 columns">
-          <h2>Example uses</h2>
-          <p>Use the buttons plugin for states and toggles.</p>
+         
           <table class="table table-bordered table-striped">
             <tbody>
              <tr>
@@ -343,21 +250,18 @@
     ================================================== -->
     <section id="carousel">
      
-      <div class="row">
-       
-        <div class="span9 columns">
-          <h2>Example carousel</h2>
-          <p>Watch the slideshow below.</p>
-          <div id="myCarousel" class="carousel slide">
+      <div class="row-fluid" style="width:640px;">
+       	
+       	<div id="myCarousel" class="carousel slide">
             <div class="carousel-inner">
-              <div class="item active">
+              <div class="item">
                 <img src="assets/img/01.jpg" alt="">
                 <div class="carousel-caption">
                   <h4>First Thumbnail label</h4>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
               </div>
-              <div class="item">
+              <div class="item active">
                 <img src="assets/img/02.jpg" alt="">
                 <div class="carousel-caption">
                   <h4>Second Thumbnail label</h4>
@@ -375,18 +279,9 @@
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
           </div>
-          <div class="alert alert-info">
-            <strong>Heads up!</strong>
-            When implementing this carousel, remove the images we have provided and replace them with your own.
-          </div>
-          <hr>
-          <h2>Using bootstrap-carousel.js</h2>
-          <p>Call via javascript:</p>
-          <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="str">'.carousel'</span><span class="pun">).</span><span class="pln">carousel</span><span class="pun">()</span></li></ol></pre>
-          <h3>Options</h3>
-          
-         
-        </div>
+       	
+       
+
       </div>
     </section>
 
@@ -397,17 +292,13 @@
     <section id="typeahead">
     
       <div class="row">
-        
-        <div class="span9 columns">
-          <h2>Example</h2>
-          <p>Start typing in the field below to show the typeahead results.</p>
+
           <div class="well">
             <input type="text" class="span3" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]">
           </div>
-          <hr>
+
   
 
-        </div>
       </div>
     </section>
 
