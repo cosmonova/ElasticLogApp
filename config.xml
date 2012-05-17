@@ -4,15 +4,15 @@
 	id		= "com.phonegap.getting.started"
 	version 	= "1.0.0">
 
-	<name>ElasticLof</name>
+	<name>Elastic Web App</name>
 
 	<description>
 		A template for getting started with PhoneGap development and build.phonegap.com
 	</description>
 
 	<author href="http://alunny.github.com"
-		email="andrew.lunny@nitobi.com">
-		Andrew Lunny
+		email="razvan.batin@gmail.com">
+		Razvan Batin
 	</author>
 
 	<icon src="icon.png" gap:role="default" />
