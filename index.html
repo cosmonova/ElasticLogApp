@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<meta name="viewport"
-	content="initial-scale=1.0, user-scalable=no, width=device-width" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Elastic Mobile App</title>
 
 <!--  
@@ -14,7 +14,20 @@
 <link rel="stylesheet" href="assets/css/bootstrap.min.css"
 	type="text/css" media="screen" />
 
-
+<style>
+@media ( min-width : 980px) {
+	.pull-center {
+		text-align: center;
+	}
+	.pull-center>.nav {
+		float: none;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		height: 32px;
+	}
+}
+</style>
 
 
 <script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
@@ -46,16 +59,16 @@ body {
 	<div class="navbar navbar-fixed-bottom">
 		<div class="navbar-inner">
 			<div class="container-fluid">
-				<div class="nav-collapse">
-					<ul class="nav">
-						<li class="active"><a href="index.html"><i class="icon-search icon-white"></i> MAIN</a></li>
-						<li><a href="list.html"><i
-								class="icon-th-list icon-white"></i> LIST</a></li>
-						<li><a href="form.html"><i class="icon-adjust icon-white"></i>
-								FORM</a></li>
-					</ul>
+				<div class="navbar navbar-fixed-bottom">
+					<div class="navbar-inner pull-center">
+						<ul class="nav">
+							<li class="active"><a href="index.html"><i class="icon-search icon-white"> </i> MAIN MENU</a></li>
+              <li><a href="list.html"><i class="icon-th-list icon-white"></i> LIST VIEW</a></li>
+              <li ><a href="form.html"><i class="icon-adjust icon-white"></i> FORM VIEW</a></li>
+						</ul>
+					</div>
 				</div>
-				<!--/.nav-collapse -->
+
 			</div>
 		</div>
 	</div>
@@ -67,10 +80,11 @@ body {
 				<a class="brand" href="#">Elastic Plastic</a>
 
 				<ul class="nav pull-right">
-					
+
 					<li class="divider-vertical"></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown"><i class="icon-user icon-white"></i> Account <b class="caret"></b></a>
+						data-toggle="dropdown"><i class="icon-user icon-white"></i>
+							Account <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Information</a></li>
 							<li><a href="#">Change Settings</a></li>
@@ -93,10 +107,7 @@ body {
 
 			<!-- Main hero unit for a primary marketing message or call to action -->
 			<div class="row">
-				<br />
-				<br />
-				<br />
-				<br />
+				<br /> <br /> <br /> <br />
 			</div>
 
 
@@ -348,7 +359,7 @@ body {
 			</div>
 		</section>
 
-		
+
 
 	</div>
 	<!-- /container -->
