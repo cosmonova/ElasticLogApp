@@ -5,7 +5,7 @@ Transitions = {
         this._watchAgain = document.getElementById('watchAgain');
         this._image = 0;
         this._image2 = 1;
-        this._imageSourceRoot = 'assets/js/transitions/images/';
+        this._imageSourceRoot = 'assets/js/transitions/';
         this._poster = document.getElementById('poster');
         this._requiresPerspective = ['cube', 'rotatein', 'horizontalflip', 'multiflip', 'unfold', 'iris'];
         if (AC.Detector.isiPad() || AC.Detector.isiPhone()) {
