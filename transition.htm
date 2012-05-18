@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://developer.apple.com/safaridemos/showcase/transitions/ -->
+<html lang="en-US"><style type="text/css">/*FlashControl*/object[type="application/x-shockwave-flash"],object[type="application/futuresplash"],object[data*=".swf"],object[src*=".swf"],embed[type="application/x-shockwave-flash"],embed[type="application/futuresplash"],embed[src*=".swf"]{display:none !important}</style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">/*FlashControl*/.fc-toolbar-button{background-color:transparent !important;background-image:url(chrome-extension://mfidmkgnfgnkihnjeklbekckimkipmoe/lib/graph/buttons.png) !important;background-repeat:no-repeat !important;border:none !important;cursor:pointer !important;display:block !important;float:left !important;clear:none !important;min-height:16px !important;min-width:16px !important;max-height:16px !important;max-width:16px !important;margin:0px !important;padding:0px !important;position:static !important;visibility:visible !important}.fc-toolbar-buttonshow-on{background-position:-16px 0 !important}.fc-toolbar-buttonshow-off{background-position:0 0 !important}.fc-toolbar-buttonhide-on{background-position:-64px 0 !important}.fc-toolbar-buttonhide-off{background-position:-32px 0 !important}.fc-toolbar-buttonhide-disabled{background-position:-48px 0 !important}.fc-toolbar-buttonadd{background-position:-80px 0 !important}.fc-panel{cursor:pointer !important;background-color:rgba(146,175,208,0.26) !important;background-image:url(chrome-extension://mfidmkgnfgnkihnjeklbekckimkipmoe/lib/graph/icon32f.png) !important;background-position:center !important;background-repeat:no-repeat !important;border:none !important;display:block;min-width:48px !important;min-height:16px !important;padding:0px !important;position:relative;visibility:visible !important}.fc-panel.fc-trans{background:none !important}.fc-toolbar{background-color:rgba(146,175,208,0.05) !important;border:none !important;border-radius:5px !important;cursor:default !important;display:block !important;min-height:16px !important;min-width:48px !important;max-height:16px !important;max-width:48px !important;margin:0px !important;visibility:visible !important;z-index:inherit !important}.fc-issue63{background-image:url(chrome-extension://mfidmkgnfgnkihnjeklbekckimkipmoe/lib/graph/warn24.png) !important;background-position:center !important;background-repeat:no-repeat !important}.fc-toolbar-animation-fade{opacity:0 !important;-webkit-transition:opacity 650ms ease-in !important}.fc-rectangle:hover > .fc-toolbar-animation-fade{opacity:1 !important;-webkit-transition:opacity 220ms ease-out !important}</style>
+	
+	<meta http-equiv="pics-label" content="(pics-1.1 &quot;http://www.icra.org/ratingsv02.html&quot; l gen true for &quot;http://www.apple.com&quot; r (cz 1 lz 1 nz 1 oz 1 vz 1) &quot;http://www.rsac.org/ratingsv01.html&quot; l gen true for &quot;http://www.apple.com&quot; r (n 0 s 0 v 0 l 0))">
+	<meta name="Author" content="Apple Inc.">
+	<meta name="viewport" content="width=1024">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+	<meta name="viewport" content="width=1024; maximum-scale=1.2;">
+
+	<title>Safari Technology Demo - Transitions</title>
+	<meta name="omni_page" content="HTML5 - Transitions">
+	<meta name="Category" content="">
+	<meta name="Description" content="">
+	<script src="assets/js/transitions/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/transitions/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/transitions/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/transitions/apple_core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/transitions/library.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/transitions/transitions.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="assets/js/transitions/base.css" type="text/css">
+	<link rel="stylesheet" href="assets/js/transitions/blackout.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="assets/js/transitions/html5.css" type="text/css" media="screen">
+
+
+
+	<link rel="stylesheet" href="assets/js/transitions/showcase.css" type="text/css">
+
+
+	<link rel="stylesheet" href="assets/js/transitions/transitions.css" type="text/css" charset="utf-8">
+	<script type="text/javascript" charset="utf-8">
+		document.observe("dom:loaded", function() {
+			if(AC.Detector.isiPad()) {
+				$('main').addClassName('isipad');
+			}
+		});	
+	</script>
+</head>
+<body>
+	<article id="main" class="content">
+		<section id="showcase">
+			<div id="html5-showcase" class="showcase">
+				<div id="transitions" class="container">
+					<header>
+						<h1>Transitions</h1>
+					</header>
+					<div id="transitions-content" class="selfclear">
+						<section id="controls">
+							<ul id="transition-list" style="opacity: 1; ">
+								<li><a href="https://developer.apple.com/safaridemos/showcase/transitions/#cube" id="tCube">Cube</a></li>
+								<li><a href="https://developer.apple.com/safaridemos/showcase/transitions/#rotatein" id="tRotatein">Rotate In</a></li>
+								<li><a href="https://developer.apple.com/safaridemos/showcase/transitions/#horizontalflip" id="tHorizontalflip">Horizontal Flip</a></li>
+								<li><a href="https://developer.apple.com/safaridemos/showcase/transitions/#multiflip" id="tMultiflip">Multi-Flip</a></li>
+								<li><a href="https://developer.apple.com/safaridemos/showcase/transitions/#dissolve" id="tDissolve">Dissolve</a></li>
+								<li><a href="https://developer.apple.com/safaridemos/showcase/transitions/#unfold" id="tUnfold">Unfold</a></li>
+								<li><a href="https://developer.apple.com/safaridemos/showcase/transitions/#toss" id="tToss">Toss</a></li>
+								<li><a href="https://developer.apple.com/safaridemos/showcase/transitions/#slidein" id="tSlidein">Slide In</a></li>
+								<li><a href="https://developer.apple.com/safaridemos/showcase/transitions/#iris" id="tIris">Iris</a></li>
+								<li><a href="https://developer.apple.com/safaridemos/showcase/transitions/#fadethrough" id="tFadethrough">Fade Through</a></li>
+							</ul>
+							<div class="how">
+								<p><strong>Try it out:</strong> Click on any of the transitions above to see it in action.</p>
+								<p><strong>About this demo:</strong> Add Keynote-style transitions to objects on your web pages by using CSS 2D and 3D transforms like the ones displayed here.</p>
+							</div>
+						</section>
+						<section id="transitions-demo">
+							<div id="poster"><img src="assets/js/transitions/showcase_transitions_002.jpg"></div>
+							<div id="cube" class="demo">
+								<div class="front face outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+								<div class="top face incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+							</div>
+							<div id="horizontalflip" class="demo">
+								<div class="flipper">
+									<div class="outgoing gallery_image"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+									<div class="incoming gallery_image"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+								</div>
+							</div>
+							<div id="multiflip" class="demo">
+								<div id="flip1" class="flipper">
+									<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+									<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+								</div>
+								<div id="flip2" class="flipper">
+									<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+									<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+								</div>
+								<div id="flip3" class="flipper">
+									<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+									<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+								</div>
+								<div id="flip4" class="flipper">
+									<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+									<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+								</div>
+								<div id="flip5" class="flipper">
+									<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+									<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+								</div>
+								<div id="flip6" class="flipper">
+									<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+									<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+								</div>
+								<div id="flip7" class="flipper">
+									<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+									<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+								</div>
+							</div>
+							<div id="unfold" class="demo">
+								<div class="box outgoing out1"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+								<div class="box outgoing out2"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+								<div class="box incoming in1"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+								<div class="box incoming in2"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+								<div class="box incoming in3"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+							</div>
+							<div id="rotatein" class="demo">
+								<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+								<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+							</div>
+							<div id="dissolve" class="demo">
+								<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+								<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+							</div>
+							<div id="toss" class="demo">
+								<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+								<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+							</div>
+							<div id="slidein" class="demo">
+								<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+								<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+							</div>
+							<div id="iris" class="demo">
+								<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+								<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+							</div>
+							<div id="fadethrough" class="demo">
+								<div class="outgoing"><img src="assets/js/transitions/showcase_transitions_001.jpg" width="600" height="400"></div>
+								<div class="incoming"><img src="assets/js/transitions/showcase_transitions_002.jpg" width="600" height="400"></div>
+							</div>
+						</section><!-- /gallery -->
+						<div id="watchAgainWrapper"><span id="watchAgain">Watch it again</span></div>
+					</div><!-- /content -->
+				</div><!-- /transitions -->
+			</div>
+		</section>
+	</article>
+
+</body></html>
