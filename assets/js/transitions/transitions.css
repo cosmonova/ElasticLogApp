@@ -7,14 +7,14 @@
 	float: left;
 	margin: 0;
 	position: relative;
-	height: 539px;
+	
 }
 #transitions #transitions-demo {
 	float: right;
 	position: relative;
 	margin: 0 0 20px;
 	width: 600px;
-	height: 400px;
+
 }
 #transitions #transitions-demo.perspective {
 	-webkit-perspective: 1000;

@@ -5,7 +5,7 @@ Transitions = {
         this._watchAgain = document.getElementById('watchAgain');
         this._image = 0;
         this._image2 = 1;
-        this._imageSourceRoot = 'https://devimages.apple.com.edgekey.net/safaridemos/showcase/transitions/images/';
+        this._imageSourceRoot = 'assets/js/transitions/images/';
         this._poster = document.getElementById('poster');
         this._requiresPerspective = ['cube', 'rotatein', 'horizontalflip', 'multiflip', 'unfold', 'iris'];
         if (AC.Detector.isiPad() || AC.Detector.isiPhone()) {
@@ -58,7 +58,7 @@ Transitions = {
             amount = images.length;
         for (var i = amount - 1; i >= 0; i--) {
             preloaded[i] = new Image();
-            preloaded[i].src = '/safaridemos/showcase/transitions/images/' + images[i];
+            preloaded[i].src = 'assets/js/transitions/' + images[i];
             preloaded[i].observe('load', function(loaded, i) {
                 loaded[i] = true;
                 if (loaded.length == amount) {
