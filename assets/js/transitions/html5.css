@@ -1,6 +1,6 @@
 * { -webkit-touch-callout: none; }
 header, footer, article, section, nav, aside { display: block; }
-html, body { background-color: #f2f2f2; }
+html, body { background-color: #FCB01D; }
 h2 { font-size: 26px; margin: 0; }
 #main { margin: 0 auto 18px; width:980px; }
 #main.isipad { width:900px; }
