@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="Author" content="Apple Inc.">
+	<meta name="viewport" content="width=1024">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+	<meta name="viewport" content="width=1024; maximum-scale=1.2;">
+
+	<title>Safari Technology Demo - Gallery</title>
+	<meta name="omni_page" content="HTML5 - Gallery">
+	<meta name="Category" content="">
+	<meta name="Description" content="">
+	
+	
+		
+		<link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css"
+	type="text/css" media="screen" />
+<link rel="stylesheet" href="assets/css/bootstrap.min.css"
+	type="text/css" media="screen" />
+
+<style>
+@media ( min-width : 980px) {
+	.pull-center {
+		text-align: center;
+	}
+	.pull-center>.nav {
+		float: none;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		height: 32px;
+	}
+}
+</style>
+
+
+<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- 
+		<script src="assets/js/dsl.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+		
+		 -->
+<script src="assets/js/jquery.min.js" type="text/javascript"
+	charset="utf-8"></script>
+
+<script src="assets/js/bootstrap.min.js" type="text/javascript"
+	charset="utf-8"></script>
+	
+	<!-- -->
+	
+	<script src="./assets/js/gallery/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./assets/js/gallery/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./assets/js/gallery/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./assets/js/gallery/apple_core.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="./assets/js/gallery/library.js"></script>
+	<script type="text/javascript" src="./assets/js/gallery/gallery.js"></script>
+	<link rel="stylesheet" href="./assets/js/gallery/base.css" type="text/css">
+	<link rel="stylesheet" href="./assets/js/gallery/blackout.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="./assets/js/gallery/html5.css" type="text/css" media="screen">
+
+
+
+	<link rel="stylesheet" href="./assets/js/gallery/showcase.css" type="text/css">
+
+
+	<link rel="stylesheet" href="./assets/js/gallery/gallery.css" type="text/css">
+	<script type="text/javascript" charset="utf-8">
+		document.observe("dom:loaded", function() {
+			if(AC.Detector.isiPad()) {
+				$('main').addClassName('isipad');
+			}
+		});	
+	</script>
+
+<body  style="padding-top:60px;">
+
+<div class="navbar navbar-fixed-bottom">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<div class="navbar navbar-fixed-bottom">
+					<div class="navbar-inner pull-center">
+						<ul class="nav">
+							<li ><a href="index.html"><i class="icon-search icon-white"> </i> MAIN MENU</a></li>
+              <li><a href="list.html"><i class="icon-th-list icon-white"></i> LIST VIEW</a></li>
+              <li ><a href="form.html"><i class="icon-adjust icon-white"></i> FORM VIEW</a></li>
+              <li> <a href="transitions.html"><i class="icon-eye-open icon-white"></i> TRANSITIONS</a></li>
+			  <li class="active"><a href="css-gallery.html"><i class="icon-picture icon-white"></i> GALLERY</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+
+				<a class="brand" href="#">Elastic Plastic</a>
+
+				<ul class="nav pull-right">
+
+					<li class="divider-vertical"></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown"><i class="icon-user icon-white"></i>
+							Account <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Information</a></li>
+							<li><a href="#">Change Settings</a></li>
+							<li><a href="#">View history</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Log out</a></li>
+						</ul></li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+<script type="text/javascript">
+/* RSID: */
+var s_account="appleglobal,appleusdeveloper"
+</script>
+
+<script type="text/javascript" src="./assets/js/gallery/s_code_h.js"></script>
+<script type="text/javascript">
+s.pageName=AC.Tracking.pageName();
+s.channel="www.us.developer"
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+	<article id="main" class="content">
+		<section id="showcase">
+			<div id="html5-showcase" class="showcase alt">
+				<div id="gallery-demo" class="container notMobile">
+	
+					<form>
+						<select id="gallery-type">
+							<option value="hori2d">Horizontal 2D</option>
+							<option value="vert2d">Vertical 2D</option>
+			            <option value="hori3d">Horizontal 3D</option>
+			            <option value="vert3d">Vertical 3D</option>
+							<option value="grid2d">Grid</option>
+						</select>
+					</form>
+					<div class="how">
+						<p><strong>Try it out:</strong> Click or tap the previous and next buttons to view images. Use the drop-down menu to change gallery style. </p>
+						<p><strong>About this demo:</strong> CSS transitions and 3D transforms let you create a gallery that doesn’t require a third-party plug-in to render.</p>
+					</div>
+
+					<div id="carousel" class="vert2d">
+						<div id="stage">
+							
+							
+							<figure class="" style="">
+								<!-- <img class="blur" src="gallery/polo3b-small.png" alt="" />
+			               		<img class="noBlur" src="gallery/polo3.jpg" alt="" />
+								<a href="#" class="prev">Prev</a>
+								<a href="#" class="next">Next</a> -->
+							<img src="./assets/js/gallery/polo3b-small.png" class="blur"><img src="./assets/js/gallery/polo3.jpg" class="noBlur"><a href="#" class="prev" onclick="#_5&quot;;return this.s_oc?this.s_oc(e):true">Prev</a><a href="#" class="next" onclick="s_objectID=&quot;#_6&quot;;return this.s_oc?this.s_oc(e):true">Next</a></figure>
+							<figure class="" style="">
+								<!-- <img class="blur" src="gallery/polo4b-small.png" alt="" />
+			               		<img class="noBlur" src="gallery/polo4.jpg" alt="" />
+								<a href="#" class="prev">Prev</a>
+								<a href="#" class="next">Next</a> -->
+							<img src="./assets/js/gallery/polo4b-small.png" class="blur"><img src="./assets/js/gallery/polo4.jpg" class="noBlur"><a href="#" class="prev" onclick="#_7&quot;;return this.s_oc?this.s_oc(e):true">Prev</a><a href="#" class="next" onclick="s_objectID=&quot;#_8&quot;;return this.s_oc?this.s_oc(e):true">Next</a></figure>
+							<figure class="" style="">
+								<!-- <img class="blur" src="gallery/polo5b-small.png" alt="" />
+			              		<img class="noBlur" src="gallery/polo5.jpg" alt="" />
+								<a href="#" class="prev">Prev</a>
+								<a href="#" class="next">Next</a> -->
+							<img src="./assets/js/gallery/polo5b-small.png" class="blur"><img src="./assets/js/gallery/polo5.jpg" class="noBlur"><a href="#" class="prev" onclick="#_9&quot;;return this.s_oc?this.s_oc(e):true">Prev</a><a href="#" class="next" onclick="s_objectID=&quot;#_10&quot;;return this.s_oc?this.s_oc(e):true">Next</a></figure>
+							<figure class="" style="">
+								<!-- <img class="blur" src="gallery/polo6b-small.png" alt="" />
+			               		<img class="noBlur" src="gallery/polo6.jpg" alt="" />
+								<a href="#" class="prev">Prev</a>
+								<a href="#" class="next">Next</a> -->
+							<img src="./assets/js/gallery/polo6b-small.png" class="blur"><img src="./assets/js/gallery/polo6.jpg" class="noBlur"><a href="#" class="prev" onclick="#_11&quot;;return this.s_oc?this.s_oc(e):true">Prev</a><a href="#" class="next" onclick="s_objectID=&quot;#_12&quot;;return this.s_oc?this.s_oc(e):true">Next</a></figure>
+							<figure class="" style="">
+								<!-- <img class="blur" src="gallery/polo7b-small.png" alt="" />
+			               		<img class="noBlur" src="gallery/polo7.jpg" alt="" />
+								<a href="#" class="prev">Prev</a>
+								<a href="#" class="next">Next</a> -->
+							<img src="./assets/js/gallery/polo7b-small.png" class="blur"><img src="./assets/js/gallery/polo7.jpg" class="noBlur"><a href="#" class="prev" onclick="s_objectID=&quot;#_13&quot;;return this.s_oc?this.s_oc(e):true">Prev</a><a href="#" class="next" onclick="s_objectID=&quot;#_14&quot;;return this.s_oc?this.s_oc(e):true">Next</a></figure>
+							<figure class="" style="">
+								<!-- <img class="blur" src="gallery/polo8b-small.png" alt="" />
+			               		<img class="noBlur" src="gallery/polo8.jpg" alt="" />
+								<a href="#" class="prev">Prev</a>
+								<a href="#" class="next">Next</a> -->
+							<img src="./assets/js/gallery/polo8b-small.png" class="blur"><img src="./assets/js/gallery/polo8.jpg" class="noBlur"><a href="#" class="prev" onclick="s_objectID=&quot;#_15&quot;;return this.s_oc?this.s_oc(e):true">Prev</a><a href="#" class="next" onclick="s_objectID=&quot;#_16&quot;;return this.s_oc?this.s_oc(e):true">Next</a></figure>
+							<figure class="" style="">
+								<!-- <img class="blur" src="gallery/polo9b-small.png" alt="" />
+			               		<img class="noBlur" src="gallery/polo9.jpg" alt="" />
+								<a href="#" class="prev">Prev</a>
+								<a href="#" class="next">Next</a> -->
+							<img src="./assets/js/gallery/polo9b-small.png" class="blur"><img src="./assets/js/gallery/polo9.jpg" class="noBlur"><a href="#" class="prev" onclick="s_objectID=&quot;#_17&quot;;return this.s_oc?this.s_oc(e):true">Prev</a><a href="#" class="next" onclick="s_objectID=&quot;#_18&quot;;return this.s_oc?this.s_oc(e):true">Next</a></figure>
+							<figure class="" style="">
+								<!-- <img class="blur" src="gallery/polo10b-small.png" alt="" />
+			               		<img class="noBlur" src="gallery/polo10.jpg" alt="" />
+								<a href="#" class="prev">Prev</a>
+								<a href="#" class="next">Next</a> -->
+							<img src="./assets/js/gallery/polo10b-small.png" class="blur"><img src="./assets/js/gallery/polo10.jpg" class="noBlur"><a href="#" class="prev" onclick="s_objectID=&quot;#_19&quot;;return this.s_oc?this.s_oc(e):true">Prev</a><a href="#" class="next" onclick="s_objectID=&quot;#_20&quot;;return this.s_oc?this.s_oc(e):true">Next</a></figure>
+							<figure class="" style="">
+								<!-- <img class="blur" src="gallery/polo11b-small.png" alt="" />
+			               		<img class="noBlur" src="gallery/polo11.jpg" alt="" />
+								<a href="#" class="prev">Prev</a>
+								<a href="#" class="next">Next</a> -->
+							<img src="./assets/js/gallery/polo11b-small.png" class="blur"><img src="./assets/js/gallery/polo11.jpg" class="noBlur"><a href="#" class="prev" onclick="s_objectID=&quot;#_21&quot;;return this.s_oc?this.s_oc(e):true">Prev</a><a href="#" class="next" onclick="s_objectID=&quot;#_22&quot;;return this.s_oc?this.s_oc(e):true">Next</a></figure>
+							<figure class="" style="">
+								<!-- <img class="blur" src="gallery/polo12b-small.png" alt="" />
+			               		<img class="noBlur" src="gallery/polo12.jpg" alt="" />
+								<a href="#" class="prev">Prev</a>
+								<a href="#" class="next">Next</a> -->
+							<img src="./assets/js/gallery/polo12b-small.png" class="blur"><img src="./assets/js/gallery/polo12.jpg" class="noBlur"><a href="#" class="prev" onclick="s_objectID=&quot;#_23&quot;;return this.s_oc?this.s_oc(e):true">Prev</a><a href="#" class="next" onclick="s_objectID=&quot;#_24&quot;;return this.s_oc?this.s_oc(e):true">Next</a></figure>
+						<figure class="" style="">
+								<!-- <img class="blur" src="gallery/polo1b-small.png" alt="" />
+			               		<img class="noBlur" src="gallery/polo1.jpg" alt="" />
+								<a href="#" class="prev">Prev</a>
+								<a href="#" class="next">Next</a> -->
+							<img src="./assets/js/gallery/polo1b-small.png" class="blur"><img src="./assets/js/gallery/polo1.jpg" class="noBlur"><a href="#" class="prev" onclick="s_objectID=&quot;#_1&quot;;return this.s_oc?this.s_oc(e):true">Prev</a><a href="#" class="next" onclick="s_objectID=&quot;#_2&quot;;return this.s_oc?this.s_oc(e):true">Next</a></figure><figure class="" style="">
+								<!-- <img class="blur" src="gallery/polo2b-small.png" alt="" />
+			               		<img class="noBlur" src="gallery/polo2.jpg" alt="" />
+								<a href="#" class="prev">Prev</a>
+								<a href="#" class="next">Next</a> -->
+							<img src="./assets/js/gallery/polo2b-small.png" class="blur"><img src="./assets/js/gallery/polo2.jpg" class="noBlur"><a href="#" class="prev" onclick="s_objectID=&quot;#_3&quot;;return this.s_oc?this.s_oc(e):true">Prev</a><a href="#" class="next" onclick="s_objectID=&quot;#_4&quot;;return this.s_oc?this.s_oc(e):true">Next</a></figure></div><!--stage-->
+					</div><!--carousel-->
+				</div><!--gallery-demo-->
+			</div>
+		</section>
+	</article>
+
+</body></html>
