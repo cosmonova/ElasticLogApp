@@ -15,6 +15,11 @@
 		Razvan Batin
 	</author>
 
+	<preference name="fullscreen" value="true" />
+	<preference name="webviewbounce" value="false" />
+	
+	<gap:splash src="Default.png" />
+
 	<icon src="icon.png" gap:role="default" />
 
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>

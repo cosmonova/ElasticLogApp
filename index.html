@@ -51,7 +51,8 @@
 $(document).ready(function(){
 	$("#content").load("index-content.html");
 	
-	window.onhashchange = function() {
+	window.onhashchange = function( e ) {
+		$(e.target).addClass( "active" );	
 		var url = window.location.hash.substr(1);
 		$("#content").load(url);
 	};
