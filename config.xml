@@ -12,8 +12,8 @@
 
 	<author href="http://alunny.github.com"	email="razvan.batin@gmail.com">Razvan Batin</author>
 
-	<preference name="fullscreen" value="true" />
-	<preference name="webviewbounce" value="false" />
+	<gap:preference name="fullscreen" value="true" />
+	<gap:preference name="webviewbounce" value="false" />
 	
 
 	<icon src="icon.png" gap:role="default" />
