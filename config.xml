@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.phonegap.getting.started"
+	id		= "ro.strobe.elasticplastic"
 	version 	= "1.0.0">
 
-	<name>Elastic Web App</name>
+	<name>ElasticPlastic</name>
 
 	<description>
 		A template for getting started with PhoneGap development and build.phonegap.com
 	</description>
 
-	<author href="http://alunny.github.com"
-		email="razvan.batin@gmail.com">
-		Razvan Batin
-	</author>
+	<author href="http://alunny.github.com"	email="razvan.batin@gmail.com">Razvan Batin</author>
 
 	<preference name="fullscreen" value="true" />
 	<preference name="webviewbounce" value="false" />
@@ -21,11 +18,12 @@
 
 	<icon src="icon.png" gap:role="default" />
 	
-	<splash src="bg-landscape.png" width="1024" height="768" />
-	<splash src="bg-portrait.png" width="768" height="1024" />
+	<gap:splash src="bg-landscape.png" width="1024" height="768" />
+	<gap:splash src="bg-portrait.png" width="768" height="1024" />
 
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
 
 	<preference name="orientation" value="default" />
+	
 </widget>

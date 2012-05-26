@@ -52,7 +52,7 @@ $(document).ready(function(){
 	$("#content").load("index-content.html");
 	
 	window.onhashchange = function( e ) {
-		//$(e.target).addClass( "active" );	
+		alert(e.target);	
 		var url = window.location.hash.substr(1);
 		$("#content").load(url).hide().fadeIn('slow');
 	};
