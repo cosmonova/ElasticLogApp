@@ -15,7 +15,8 @@
 	<gap:preference name="fullscreen" value="true" />
 	<gap:preference name="webviewbounce" value="false" />
 	
-
+	<!-- df -->
+	
 	<icon src="icon.png" gap:role="default" />
 	
 	<gap:splash src="bg-landscape.png" width="1024" height="768" />
