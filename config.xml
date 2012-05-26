@@ -18,9 +18,11 @@
 	<preference name="fullscreen" value="true" />
 	<preference name="webviewbounce" value="false" />
 	
-	<gap:splash src="Default.png" />
 
 	<icon src="icon.png" gap:role="default" />
+	
+	<splash src="bg-landscape.png" width="1024" height="768" />
+	<splash src="bg-portrait.png" width="768" height="1024" />
 
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
