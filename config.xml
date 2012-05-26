@@ -19,8 +19,8 @@
 	
 	<icon src="icon.png" gap:role="default" />
 	
-	<gap:splash src="bg-landscape.png" width="2048" height="1536" />
-	<gap:splash src="bg-portrait.png" width="1536" height="2048" />
+	<gap:splash src="bg-landscape.png" width="1024" height="768" />
+	<gap:splash src="bg-portrait.png" width="768" height="1024" />
 
 	<gap:feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<gap:feature name="http://api.phonegap.com/1.0/network"/>

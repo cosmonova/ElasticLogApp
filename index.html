@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Elastic Mobile App</title>
+<title>Elastic Plastic App</title>
 
 <!--  
 		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
@@ -52,7 +52,6 @@ $(document).ready(function(){
 	$("#content").load("index-content.html");
 	
 	window.onhashchange = function( e ) {
-		alert(e.target);	
 		var url = window.location.hash.substr(1);
 		$("#content").load(url).hide().fadeIn('slow');
 	};
