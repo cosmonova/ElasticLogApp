@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <meta name = "viewport" content = "user-scalable=no,width=device-width" />
 	<title>Simplify</title>
 	<script type="text/javascript" src="assets/js/path/paper.js"></script>
 	<script type="text/paperscript" canvas="canvas">
@@ -56,14 +57,9 @@
 
 	</script>
 
-<script type="text/javascript">
-touchMove = function(event) {
-// Prevent scrolling on this element
-event.preventDefault();
-}
-</script>
+
 </head>
 <body>
-	<canvas id="canvas" resize ontouchmove="touchMove(event);"></canvas>
+	<canvas id="canvas" resize></canvas>
 </body>
 </html>
