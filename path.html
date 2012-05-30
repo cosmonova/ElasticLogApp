@@ -3,7 +3,6 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Simplify</title>
-	<link rel="stylesheet" href="../css/style.css">
 	<script type="text/javascript" src="assets/js/path/paper.js"></script>
 	<script type="text/paperscript" canvas="canvas">
 		var path;
@@ -53,9 +52,18 @@
 			textItem.content = difference + ' of the ' + segmentCount + ' segments were removed. Saving ' + percentage + '%';
 
 		}
+
+
 	</script>
+
+<script type="text/javascript">
+touchMove = function(event) {
+// Prevent scrolling on this element
+event.preventDefault();
+}
+</script>
 </head>
 <body>
-	<canvas id="canvas" resize></canvas>
+	<canvas id="canvas" resize ontouchmove="touchMove(event);"></canvas>
 </body>
 </html>
